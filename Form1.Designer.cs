@@ -50,11 +50,12 @@
             // 
             // text
             // 
-            this.text.Font = new System.Drawing.Font("新細明體", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.text.Font = new System.Drawing.Font("微軟正黑體", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.text.Location = new System.Drawing.Point(81, 12);
             this.text.Name = "text";
-            this.text.Size = new System.Drawing.Size(549, 64);
+            this.text.Size = new System.Drawing.Size(549, 70);
             this.text.TabIndex = 0;
+            this.text.Text = "0";
             // 
             // AC
             // 
@@ -65,7 +66,7 @@
             this.AC.TabIndex = 1;
             this.AC.Text = "AC";
             this.AC.UseVisualStyleBackColor = true;
-            this.AC.Click += new System.EventHandler(this.button1_Click);
+            this.AC.Click += new System.EventHandler(this.ac_Click);
             // 
             // one
             // 
@@ -109,6 +110,7 @@
             this.add.TabIndex = 5;
             this.add.Text = "+";
             this.add.UseVisualStyleBackColor = true;
+            this.add.Click += new System.EventHandler(this.add_Click);
             // 
             // ninus
             // 
@@ -119,6 +121,7 @@
             this.ninus.TabIndex = 6;
             this.ninus.Text = "-";
             this.ninus.UseVisualStyleBackColor = true;
+            this.ninus.Click += new System.EventHandler(this.minus_Click);
             // 
             // six
             // 
@@ -217,6 +220,7 @@
             this.equal.TabIndex = 15;
             this.equal.Text = "=";
             this.equal.UseVisualStyleBackColor = true;
+            this.equal.Click += new System.EventHandler(this.equal_Click);
             // 
             // multiply
             // 
@@ -227,6 +231,7 @@
             this.multiply.TabIndex = 16;
             this.multiply.Text = "*";
             this.multiply.UseVisualStyleBackColor = true;
+            this.multiply.Click += new System.EventHandler(this.multiply_Click);
             // 
             // divid
             // 
@@ -237,6 +242,7 @@
             this.divid.TabIndex = 17;
             this.divid.Text = "/";
             this.divid.UseVisualStyleBackColor = true;
+            this.divid.Click += new System.EventHandler(this.divided_Click);
             // 
             // Form1
             // 
