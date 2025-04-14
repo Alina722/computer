@@ -135,19 +135,19 @@ namespace computer
                 text.Text = text.Text + ".";
             }
         }
-        private void add_number(string num)
+        private void add_number(string _num)
         {
             if (text.Text == "0")
             {
                 text.Text = "";
             }
-            text.Text += num;
+            text.Text += _num;
         }
-        private void calculate(int oper)
+        private void calculate(int _oper)
         {
             num1 = Convert.ToSingle(text.Text);
             text.Text = "0";
-            operators = oper;
+            operators = _oper;
         }
     }
 }
