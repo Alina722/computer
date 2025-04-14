@@ -23,6 +23,9 @@ namespace computer
         private void ac_Click(object sender, EventArgs e)
         {
             text.Text = "0";
+            operators = -1;
+            num1 = 0f;
+            num2 = 0f;
         }
 
         private void one_Click(object sender, EventArgs e)
@@ -31,7 +34,7 @@ namespace computer
             {
                 text.Text = "";
             }
-            text.Text = text.Text + "1";
+            text.Text += "1";
         }
 
         private void two_Click(object sender, EventArgs e)
@@ -40,7 +43,7 @@ namespace computer
             {
                 text.Text = "";
             }
-            text.Text = text.Text + "2";
+            text.Text +=  "2";
         }
 
         private void three_Click(object sender, EventArgs e)
@@ -49,7 +52,7 @@ namespace computer
             {
                 text.Text = "";
             }
-            text.Text = text.Text + "3";
+            text.Text += "3";
         }
 
         private void four_Click(object sender, EventArgs e)
@@ -58,7 +61,7 @@ namespace computer
             {
                 text.Text = "";
             }
-            text.Text = text.Text + "4";
+            text.Text += "4";
         }
 
         private void five_Click(object sender, EventArgs e)
@@ -67,7 +70,7 @@ namespace computer
             {
                 text.Text = "";
             }
-            text.Text = text.Text + "5";
+            text.Text += "5";
         }
 
         private void six_Click(object sender, EventArgs e)
@@ -76,7 +79,7 @@ namespace computer
             {
                 text.Text = "";
             }
-            text.Text = text.Text + "6";
+            text.Text += "6";
         }
 
         private void seven_Click(object sender, EventArgs e)
@@ -85,7 +88,7 @@ namespace computer
             {
                 text.Text = "";
             }
-            text.Text = text.Text + "7";
+            text.Text += "7";
         }
 
         private void eight_Click(object sender, EventArgs e)
@@ -94,7 +97,7 @@ namespace computer
             {
                 text.Text = "";
             }
-            text.Text = text.Text + "8";
+            text.Text += "8";
         }
 
         private void nine_Click(object sender, EventArgs e)
@@ -103,7 +106,7 @@ namespace computer
             {
                 text.Text = "";
             }
-            text.Text = text.Text + "9";
+            text.Text += "9";
         }
 
         private void zero_Click(object sender, EventArgs e)
@@ -175,7 +178,7 @@ namespace computer
 
         private void dot_Click(object sender, EventArgs e)
         {
-            if (text.Text.Contains(".") == false)
+            if (!text.Text.Contains("."))
             {
                 text.Text = text.Text + ".";
             }

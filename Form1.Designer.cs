@@ -51,7 +51,7 @@
             // text
             // 
             this.text.Font = new System.Drawing.Font("微軟正黑體", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.text.Location = new System.Drawing.Point(81, 12);
+            this.text.Location = new System.Drawing.Point(120, 58);
             this.text.Name = "text";
             this.text.Size = new System.Drawing.Size(549, 70);
             this.text.TabIndex = 0;
@@ -60,7 +60,7 @@
             // AC
             // 
             this.AC.Font = new System.Drawing.Font("微軟正黑體", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.AC.Location = new System.Drawing.Point(81, 90);
+            this.AC.Location = new System.Drawing.Point(120, 136);
             this.AC.Name = "AC";
             this.AC.Size = new System.Drawing.Size(105, 60);
             this.AC.TabIndex = 1;
@@ -71,7 +71,7 @@
             // one
             // 
             this.one.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.one.Location = new System.Drawing.Point(192, 90);
+            this.one.Location = new System.Drawing.Point(231, 136);
             this.one.Name = "one";
             this.one.Size = new System.Drawing.Size(105, 60);
             this.one.TabIndex = 2;
@@ -82,7 +82,7 @@
             // two
             // 
             this.two.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.two.Location = new System.Drawing.Point(303, 90);
+            this.two.Location = new System.Drawing.Point(342, 136);
             this.two.Name = "two";
             this.two.Size = new System.Drawing.Size(105, 60);
             this.two.TabIndex = 3;
@@ -93,7 +93,7 @@
             // three
             // 
             this.three.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.three.Location = new System.Drawing.Point(414, 90);
+            this.three.Location = new System.Drawing.Point(453, 136);
             this.three.Name = "three";
             this.three.Size = new System.Drawing.Size(105, 60);
             this.three.TabIndex = 4;
@@ -104,7 +104,7 @@
             // add
             // 
             this.add.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.add.Location = new System.Drawing.Point(525, 90);
+            this.add.Location = new System.Drawing.Point(564, 136);
             this.add.Name = "add";
             this.add.Size = new System.Drawing.Size(105, 60);
             this.add.TabIndex = 5;
@@ -115,7 +115,7 @@
             // ninus
             // 
             this.ninus.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.ninus.Location = new System.Drawing.Point(525, 165);
+            this.ninus.Location = new System.Drawing.Point(564, 202);
             this.ninus.Name = "ninus";
             this.ninus.Size = new System.Drawing.Size(105, 60);
             this.ninus.TabIndex = 6;
@@ -126,7 +126,7 @@
             // six
             // 
             this.six.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.six.Location = new System.Drawing.Point(414, 165);
+            this.six.Location = new System.Drawing.Point(453, 202);
             this.six.Name = "six";
             this.six.Size = new System.Drawing.Size(105, 60);
             this.six.TabIndex = 7;
@@ -137,7 +137,7 @@
             // five
             // 
             this.five.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.five.Location = new System.Drawing.Point(303, 165);
+            this.five.Location = new System.Drawing.Point(342, 202);
             this.five.Name = "five";
             this.five.Size = new System.Drawing.Size(105, 60);
             this.five.TabIndex = 8;
@@ -148,7 +148,7 @@
             // four
             // 
             this.four.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.four.Location = new System.Drawing.Point(192, 165);
+            this.four.Location = new System.Drawing.Point(231, 202);
             this.four.Name = "four";
             this.four.Size = new System.Drawing.Size(105, 60);
             this.four.TabIndex = 9;
@@ -159,7 +159,7 @@
             // seven
             // 
             this.seven.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.seven.Location = new System.Drawing.Point(192, 245);
+            this.seven.Location = new System.Drawing.Point(231, 268);
             this.seven.Name = "seven";
             this.seven.Size = new System.Drawing.Size(105, 60);
             this.seven.TabIndex = 10;
@@ -170,7 +170,7 @@
             // eight
             // 
             this.eight.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.eight.Location = new System.Drawing.Point(303, 245);
+            this.eight.Location = new System.Drawing.Point(342, 268);
             this.eight.Name = "eight";
             this.eight.Size = new System.Drawing.Size(105, 60);
             this.eight.TabIndex = 11;
@@ -181,7 +181,7 @@
             // nine
             // 
             this.nine.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.nine.Location = new System.Drawing.Point(414, 245);
+            this.nine.Location = new System.Drawing.Point(453, 268);
             this.nine.Name = "nine";
             this.nine.Size = new System.Drawing.Size(105, 60);
             this.nine.TabIndex = 12;
@@ -192,7 +192,7 @@
             // dot
             // 
             this.dot.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.dot.Location = new System.Drawing.Point(192, 323);
+            this.dot.Location = new System.Drawing.Point(231, 334);
             this.dot.Name = "dot";
             this.dot.Size = new System.Drawing.Size(105, 60);
             this.dot.TabIndex = 13;
@@ -203,7 +203,7 @@
             // zero
             // 
             this.zero.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.zero.Location = new System.Drawing.Point(303, 323);
+            this.zero.Location = new System.Drawing.Point(342, 334);
             this.zero.Name = "zero";
             this.zero.Size = new System.Drawing.Size(105, 60);
             this.zero.TabIndex = 14;
@@ -214,7 +214,7 @@
             // equal
             // 
             this.equal.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.equal.Location = new System.Drawing.Point(414, 323);
+            this.equal.Location = new System.Drawing.Point(453, 334);
             this.equal.Name = "equal";
             this.equal.Size = new System.Drawing.Size(105, 60);
             this.equal.TabIndex = 15;
@@ -225,7 +225,7 @@
             // multiply
             // 
             this.multiply.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.multiply.Location = new System.Drawing.Point(525, 245);
+            this.multiply.Location = new System.Drawing.Point(564, 268);
             this.multiply.Name = "multiply";
             this.multiply.Size = new System.Drawing.Size(105, 60);
             this.multiply.TabIndex = 16;
@@ -236,7 +236,7 @@
             // divid
             // 
             this.divid.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.divid.Location = new System.Drawing.Point(525, 323);
+            this.divid.Location = new System.Drawing.Point(564, 334);
             this.divid.Name = "divid";
             this.divid.Size = new System.Drawing.Size(105, 60);
             this.divid.TabIndex = 17;
