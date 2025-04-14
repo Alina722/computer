@@ -30,120 +30,72 @@ namespace computer
 
         private void one_Click(object sender, EventArgs e)
         {
-            if (text.Text == "0")
-            {
-                text.Text = "";
-            }
-            text.Text += "1";
+            add_number("1");
         }
 
         private void two_Click(object sender, EventArgs e)
         {
-            if (text.Text == "0")
-            {
-                text.Text = "";
-            }
-            text.Text +=  "2";
+            add_number("2");
         }
 
         private void three_Click(object sender, EventArgs e)
         {
-            if (text.Text == "0")
-            {
-                text.Text = "";
-            }
-            text.Text += "3";
+            add_number("3");
         }
 
         private void four_Click(object sender, EventArgs e)
         {
-            if (text.Text == "0")
-            {
-                text.Text = "";
-            }
-            text.Text += "4";
+            add_number("4");
         }
 
         private void five_Click(object sender, EventArgs e)
         {
-            if (text.Text == "0")
-            {
-                text.Text = "";
-            }
-            text.Text += "5";
+            add_number("5");
         }
 
         private void six_Click(object sender, EventArgs e)
         {
-            if (text.Text == "0")
-            {
-                text.Text = "";
-            }
-            text.Text += "6";
+            add_number("6");
         }
 
         private void seven_Click(object sender, EventArgs e)
         {
-            if (text.Text == "0")
-            {
-                text.Text = "";
-            }
-            text.Text += "7";
+            add_number("7");
         }
 
         private void eight_Click(object sender, EventArgs e)
         {
-            if (text.Text == "0")
-            {
-                text.Text = "";
-            }
-            text.Text += "8";
+            add_number("8");
         }
 
         private void nine_Click(object sender, EventArgs e)
         {
-            if (text.Text == "0")
-            {
-                text.Text = "";
-            }
-            text.Text += "9";
+            add_number("9");
         }
 
         private void zero_Click(object sender, EventArgs e)
         {
-            if (text.Text == "0")
-            {
-                text.Text = "";
-            }
-            text.Text = text.Text + "0";
+            add_number("0");
         }
 
         private void add_Click(object sender, EventArgs e)
         {
-            num1 = Convert.ToSingle(text.Text);
-            text.Text = "0";
-            operators = 0;
+            calculate(0);
         }
 
         private void multiply_Click(object sender, EventArgs e)
         {
-            num1 = Convert.ToSingle(text.Text);
-            text.Text = "0";
-            operators = 2;
+            calculate(2);
         }
 
         private void minus_Click(object sender, EventArgs e)
         {
-            num1 = Convert.ToSingle(text.Text);
-            text.Text = "0";
-            operators = 1;
+            calculate(1);
         }
 
         private void divided_Click(object sender, EventArgs e)
         {
-            num1 = Convert.ToSingle(text.Text);
-            text.Text = "0";
-            operators = 3;
+            calculate(3);
         }
 
         private void equal_Click(object sender, EventArgs e)
@@ -182,6 +134,20 @@ namespace computer
             {
                 text.Text = text.Text + ".";
             }
+        }
+        private void add_number(string num)
+        {
+            if (text.Text == "0")
+            {
+                text.Text = "";
+            }
+            text.Text += num;
+        }
+        private void calculate(int oper)
+        {
+            num1 = Convert.ToSingle(text.Text);
+            text.Text = "0";
+            operators = oper;
         }
     }
 }
