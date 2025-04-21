@@ -17,15 +17,13 @@ namespace computer
             InitializeComponent();//程式開始便執行
             //text.Text = "0";
         }
-        float num1, num2;
+        Calculate Ca = new Calculate();
         int operators = -1;//紀錄選擇的運算符號 0:+ 1:- 2:* 3:/ -1:重設
 
         private void ac_Click(object sender, EventArgs e)
         {
             text.Text = "0";
-            operators = -1;
-            num1 = 0f;
-            num2 = 0f;
+            Ca.Reset();
         }
 
         private void one_Click(object sender, EventArgs e)
@@ -101,30 +99,27 @@ namespace computer
         private void equal_Click(object sender, EventArgs e)
         {
             float finalResults = 0f; //宣告最後計算結果變數
-            num2 = Convert.ToSingle(text.Text); //將輸入文字框轉換成浮點數，存入第二個數字的全域變數
+            Ca.secondNumber = Convert.ToSingle(text.Text); //將輸入文字框轉換成浮點數，存入第二個數字的全域變數
 
             //依照四則運算符號的選擇，進行加減乘除
             switch (operators)
             {
                 case 0:
-                    finalResults = num1 + num2;
+                    finalResults = Ca.Add(); // 執行加法
                     break;
                 case 1:
-                    finalResults = num1 - num2;
+                    finalResults = Ca.Subtract(); // 執行減法
                     break;
                 case 2:
-                    finalResults = num1 * num2;
+                    finalResults = Ca.Multiply(); // 執行乘法
                     break;
                 case 3:
-                    finalResults = num1 / num2;
+                    finalResults = Ca.Divide(); // 執行除法
                     break;
             }
 
             text.Text = string.Format("{0:0.##########}", finalResults); //在輸入文字框中，顯示最後計算結果，並且轉換成格式化的字串內容
-                                      //限制小數點後十位
-                                                                         //重置所有全域變數
-            num1 = 0f;
-            num2 = 0f;
+                                     //限制小數點後十位
             operators = -1;
         }
 
@@ -132,7 +127,7 @@ namespace computer
         {
             if (!text.Text.Contains("."))
             {
-                text.Text = text.Text + ".";
+                text.Text += ".";
             }
         }
         private void add_number(string _num)
@@ -145,7 +140,7 @@ namespace computer
         }
         private void calculate(int _oper)
         {
-            num1 = Convert.ToSingle(text.Text);
+            Ca.firstNumber = Convert.ToSingle(text.Text);
             text.Text = "0";
             operators = _oper;
         }
