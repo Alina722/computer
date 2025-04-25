@@ -117,6 +117,9 @@ namespace computer
                 case 3:
                     finalResults = Ca.Divide(); // 執行除法
                     break;
+                case 4:
+                    finalResults = Ca.Percent();
+                    break;
             }
 
             text.Text = string.Format("{0:0.##########}", finalResults); //在輸入文字框中，顯示最後計算結果，並且轉換成格式化的字串內容
@@ -131,6 +134,8 @@ namespace computer
                 text.Text += ".";
             }
         }
+
+        //在輸入框疊加數字
         private void add_number(string _num)
         {
             if (text.Text == "0")
@@ -153,6 +158,11 @@ namespace computer
                 text.Text = text.Text.Substring(0, text.Text.Length - 1);
                 text.SelectionStart = text.Text.Length; // 游標移到最後
             }
+        }
+
+        private void btnPercent_Click(object sender, EventArgs e)
+        {
+            calculate(4);
         }
     }
 }
