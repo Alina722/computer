@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace computer
 {
@@ -143,6 +144,15 @@ namespace computer
             Ca.firstNumber = Convert.ToSingle(text.Text);
             text.Text = "0";
             operators = _oper;
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(text.Text))
+            {
+                text.Text = text.Text.Substring(0, text.Text.Length - 1);
+                text.SelectionStart = text.Text.Length; // 游標移到最後
+            }
         }
     }
 }

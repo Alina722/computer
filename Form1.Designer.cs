@@ -46,8 +46,8 @@
             this.equal = new System.Windows.Forms.Button();
             this.multiply = new System.Windows.Forms.Button();
             this.divid = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnPercent = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // text
@@ -246,33 +246,34 @@
             this.divid.UseVisualStyleBackColor = true;
             this.divid.Click += new System.EventHandler(this.divided_Click);
             // 
-            // button1
+            // btnDelete
             // 
-            this.button1.Font = new System.Drawing.Font("微軟正黑體", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button1.Location = new System.Drawing.Point(120, 268);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 60);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnDelete.Font = new System.Drawing.Font("微軟正黑體", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnDelete.Location = new System.Drawing.Point(120, 268);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(105, 60);
+            this.btnDelete.TabIndex = 18;
+            this.btnDelete.Text = "<<";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // button2
+            // btnPercent
             // 
-            this.button2.Font = new System.Drawing.Font("微軟正黑體", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button2.Location = new System.Drawing.Point(120, 334);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(105, 60);
-            this.button2.TabIndex = 19;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnPercent.Font = new System.Drawing.Font("微軟正黑體", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnPercent.Location = new System.Drawing.Point(120, 334);
+            this.btnPercent.Name = "btnPercent";
+            this.btnPercent.Size = new System.Drawing.Size(105, 60);
+            this.btnPercent.TabIndex = 19;
+            this.btnPercent.Text = "%";
+            this.btnPercent.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnPercent);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.divid);
             this.Controls.Add(this.multiply);
             this.Controls.Add(this.equal);
@@ -318,8 +319,8 @@
         private System.Windows.Forms.Button equal;
         private System.Windows.Forms.Button multiply;
         private System.Windows.Forms.Button divid;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnPercent;
     }
 }
 
